@@ -1,3 +1,5 @@
+package Cwicz1
+
 import static javax.swing.JOptionPane.*;
 
 def array = "zero jeden dwa trzy cztery pięć sześć siedem osiem dziewięć".tokenize()

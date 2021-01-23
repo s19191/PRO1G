@@ -1,3 +1,5 @@
+package Cwicz1
+
 import static javax.swing.JOptionPane.*;
 
 def map = [:].withDefault { 0 }
