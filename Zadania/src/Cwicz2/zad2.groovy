@@ -2,7 +2,7 @@ package Cwicz2
 
 import static javax.swing.JOptionPane.*
 
-List getInts(){
+List getInts() {
     def input
 
     while (!input) {

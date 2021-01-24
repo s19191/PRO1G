@@ -1,0 +1,4 @@
+Groovy	Kotek Asia	Nowakowski Artur	Bale Krzysztof	Mazur Krzysztof
+Grails	Kowalski Piotr	Kwasowski Jan	Kotek Asia
+Java	Kotek Asia	Kowalczyk Adam
+JEE	Mazur Krzysztof	Bale Krzysztof

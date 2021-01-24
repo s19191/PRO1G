@@ -1,11 +1,11 @@
 package Cwicz1
 
-def maximum(list){
+def maximum(list) {
     def result = []
     def indexes = []
     def map = [:]
     list.eachWithIndex { it, index ->
-        if(it !in map){
+        if (it !in map) {
             indexes << index
             map[it] = indexes
             indexes = []

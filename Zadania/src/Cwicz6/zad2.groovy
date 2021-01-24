@@ -10,17 +10,17 @@ for (item in pmap) println "W projekcie: $item.key pracuje $item.value.size osó
 
 pmap.each { if (it.value.size() > 2) println "W projekcie: $it.key pracuje więcej niż 2 programistów"}
 
-def out = [:]
-pmap.each { element ->
-    element.value.each { employee ->
-        if (employee !in out) {
+def emap = [:]
+pmap.each { project ->
+    project.value.each { employee ->
+        if (employee !in emap) {
             def tmp = []
-            tmp << (element.key)
-            out[employee] = tmp
+            tmp << (project.key)
+            emap[employee] = tmp
         } else {
-            out[employee] << element.key
+            emap[employee] << project.key
         }
     }
 }
 
-println out
+println emap

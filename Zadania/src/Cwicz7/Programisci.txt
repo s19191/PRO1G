@@ -1,0 +1,7 @@
+Kotek Asia	Groovy	Grails	Java	
+Nowakowski Artur	Groovy	
+Bale Krzysztof	Groovy	JEE	
+Mazur Krzysztof	Groovy	JEE	
+Kowalski Piotr	Grails	
+Kwasowski Jan	Grails	
+Kowalczyk Adam	Java	
