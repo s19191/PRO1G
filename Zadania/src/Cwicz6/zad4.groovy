@@ -1,5 +1,7 @@
 package Cwicz6
 
+//TODO: Zapytać się jak by wyglądało z replaceAll
+
 import groovy.json.JsonSlurper
 
 def text = 'Ala ma kota za -12.99 PLN Kot ma Ale za 0.0 PLN Kot kosztuje: 40.99 PLN'

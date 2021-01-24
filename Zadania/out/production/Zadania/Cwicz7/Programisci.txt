@@ -1,0 +1,21 @@
+Dev: Kotek Asia 
+Projekty: [Groovy, Grails, Java] 
+
+Dev: Nowakowski Artur 
+Projekty: [Groovy] 
+
+Dev: Bale Krzysztof 
+Projekty: [Groovy, JEE] 
+
+Dev: Mazur Krzysztof 
+Projekty: [Groovy, JEE] 
+
+Dev: Kowalski Piotr 
+Projekty: [Grails] 
+
+Dev: Kwasowski Jan 
+Projekty: [Grails] 
+
+Dev: Kowalczyk Adam 
+Projekty: [Java] 
+
