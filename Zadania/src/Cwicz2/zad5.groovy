@@ -1,14 +1,16 @@
 package Cwicz2
 
-def eachTuple(def input, Closure c) {
-    int paramsCount = c.getMaximumNumberOfParameters()
-    List collatedList
-    if (input instanceof String)
-        collatedList = input.split("").collate(paramsCount)
-    else
-        collatedList = input.collate(paramsCount)
+def eachTuple(def data, Closure c) {
+    int numberOfParameters = c.getMaximumNumberOfParameters()
 
-    collatedList.each { c.call(it) }
+    def array = []
+    if (data instanceof String) {
+        array = data.tokenize().collate(numberOfParameters)
+    } else {
+        array = data.collate(numberOfParameters)
+    }
+
+    array.each { c.call(it) }
 }
 
 def list = (1..40)
@@ -23,4 +25,5 @@ def out = new StringBuffer()
 eachTuple(s) { a,b ->
     out << b << a
 }
+
 println out

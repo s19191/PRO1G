@@ -1,26 +1,26 @@
 package Cwicz1
 
 def maximum(list){
-    output = []
-    indexes = []
-    objectsMap = [:]
+    def result = []
+    def indexes = []
+    def map = [:]
     list.eachWithIndex { it, index ->
-        if(it !in objectsMap){
+        if(it !in map){
             indexes << index
-            objectsMap[it] = indexes
+            map[it] = indexes
             indexes = []
         } else {
-            List listTmp = objectsMap[it]
+            List listTmp = map[it]
             listTmp << index
-            objectsMap[it] = listTmp
+            map[it] = listTmp
         }
     }
-    objectsMap = objectsMap.sort {it.value}
-    output << objectsMap.entrySet().last().key
-    output << objectsMap.entrySet().last().value
-    return output
+    map = map.sort {it.value}
+    result << map.entrySet().last().key
+    result << map.entrySet().last().value
+    return result
 }
-//TODO: Poprwawić
+
 (maxVal, indList) = maximum( [5, 3, 5, 5, 1, 5] )
 println "Maximum: $maxVal"
 println "Indexes: $indList"

@@ -1,6 +1,6 @@
 package Cwicz2
 
-import static javax.swing.JOptionPane.showInputDialog
+import static javax.swing.JOptionPane.*
 
 List getInts(){
     def input
@@ -9,6 +9,8 @@ List getInts(){
         inputDialog = showInputDialog("Podaj liczbe calkowita")
         if (inputDialog.isInteger()) {
             input = inputDialog
+        } else {
+            showMessageDialog(null, "Nie prawidłowe dane wejściowe")
         }
     }
     return (input as List).collect{it as Integer}
