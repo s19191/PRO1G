@@ -2,7 +2,7 @@ package Cwicz7
 
 import groovy.json.JsonSlurper
 
-def url = 'https://api.ratesapi.io/api/latest'
+def url = "https://api.ratesapi.io/api/latest"
 
 def apiResult = (new JsonSlurper()).parse(
         new InputStreamReader(

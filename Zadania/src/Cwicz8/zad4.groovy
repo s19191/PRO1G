@@ -1,6 +1,6 @@
 package Cwicz8
 
-def wordsToSortFile = new File("wordsToSort.txt")
+def wordsToSortFile = new File('wordsToSort.txt')
 
 def wordsToSortArray = wordsToSortFile.text.tokenize()
 

@@ -2,11 +2,11 @@ package Cwicz7
 
 def membersProjects = [:]
 def bigProjects = []
-def projektyDuzeFile = new File('ProjektyDuze.txt')
+def projektyDuzeFile = new File("ProjektyDuze.txt")
 projektyDuzeFile.delete()
-def programisciFile = new File('Programisci.txt')
+def programisciFile = new File("Programisci.txt")
 programisciFile.delete()
-def projektyFile = new File('Projekty.txt')
+def projektyFile = new File("Projekty.txt")
 projektyFile.eachLine { line ->
     def array = line.tokenize('\t')
     def projectName = array[0]

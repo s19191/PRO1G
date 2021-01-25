@@ -3,9 +3,9 @@ package Cwicz8
 import java.text.Collator
 import static javax.swing.JOptionPane.*
 
-def words = new URL('http://wiki.puzzlers.org/pub/wordlists/unixdict.txt').getText("UTF-8").tokenize()
+def words = new URL('http://wiki.puzzlers.org/pub/wordlists/unixdict.txt').getText('UTF-8').tokenize()
 
-def treeMap = new TreeMap<String, TreeSet<String>>(Collator.getInstance(new Locale("en")));
+def treeMap = new TreeMap<String, TreeSet<String>>(Collator.getInstance(new Locale('en')));
 
 words.each {
     def letters = it.toList().sort().join()
@@ -26,7 +26,7 @@ treeMap = treeMap.sort({a, b ->
 
 treeMap.each { println it.value}
 
-while (inputDialog = showInputDialog("Podaj produkt i jego koszt w formacie produkt=koszt")) {
+while (inputDialog = showInputDialog('Podaj słowo, którego anagramów szukasz')) {
     def letters = inputDialog.toList().sort().join()
     def anagramsToInputDialog = treeMap.find( {it.key == letters}).value
     showMessageDialog null, "Word: $inputDialog\nAnagrams: $anagramsToInputDialog"
