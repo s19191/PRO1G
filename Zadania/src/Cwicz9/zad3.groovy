@@ -22,7 +22,7 @@ while (!inputDialog.isInteger() || ((inputDialog as Integer) > 3 && (inputDialog
 }
 
 def swing = new SwingBuilder().edt {
-    frame(title: 'Buttons', defaultCloseOperation: JFrame.EXIT_ON_CLOSE, pack: true, show: true,layout: lm[(inputDialog as Integer) - 1]) {
+    frame(title: 'Buttons', defaultCloseOperation: JFrame.EXIT_ON_CLOSE, pack: true, show: true, layout: lm[(inputDialog as Integer) - 1]) {
         button(text: buttonNames[0], constraints: BorderLayout.CENTER)
         button(text: buttonNames[1], constraints: BorderLayout.EAST)
         button(text: buttonNames[2], constraints: BorderLayout.WEST)
