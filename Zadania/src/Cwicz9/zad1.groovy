@@ -33,7 +33,6 @@ def swing = new SwingBuilder().edt {
                     }
                 })
             }
-
             menu("Tło") {
                 menuItem("Zmień kolor", actionPerformed: { e ->
                     JColorChooser jColorChooser = new JColorChooser()
