@@ -11,7 +11,7 @@ fib = { n ->
     }
 }
 assert fib(15)
-println counter
+println "Bez użycia memoize(): $counter"
 
 counter = 1
 fib = { n ->
@@ -25,4 +25,4 @@ fib = { n ->
 
 assert fib(25)
 
-println counter
+println "Z użyciem memoize(): $counter"
