@@ -6,9 +6,9 @@ List getInts() {
     def input
 
     while (!input) {
-        inputDialog = showInputDialog("Podaj liczbe calkowita")
-        if (inputDialog.isInteger()) {
-            input = inputDialog
+        def number = showInputDialog("Podaj liczbe calkowita")
+        if (number.isInteger()) {
+            input = number
         } else {
             showMessageDialog(null, "Nie prawidłowe dane wejściowe")
         }

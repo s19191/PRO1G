@@ -3,10 +3,10 @@ package Cwicz1
 import static javax.swing.JOptionPane.*;
 
 def array = "zero jeden dwa trzy cztery pięć sześć siedem osiem dziewięć".tokenize()
-inputDialog = showInputDialog("Podaj liczbę do konwersji:")
+def number = showInputDialog("Podaj liczbę do konwersji:")
 
 def result = []
-if (inputDialog.isInteger()) for (num in inputDialog) result << array[num as Integer]
+if (number.isInteger()) for (digit in number) result << array[digit as Integer]
 else showMessageDialog(null, "Nie prawidłowe dane wejściowe")
 
 println result.join("-")
